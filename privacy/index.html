@@ -112,7 +112,7 @@
     <p>Inside the portal, patient records and questionnaire responses are stored in an encrypted database. Every document uploaded to the portal — referral letters, imaging reports, consent forms — is encrypted with AES-256-GCM before being written to disk. Nobody can read those files without the decryption key, which only the portal software holds.</p>
 
     <h3>Where it lives</h3>
-    <p>The portal is currently hosted on managed cloud infrastructure in a United States region. Data at rest is encrypted as described above; connections are always encrypted end-to-end. We are actively working on moving the portal to Australian-based hosting; when that migration is complete this page will be updated.</p>
+    <p>The portal is hosted in Sydney, Australia, on managed cloud infrastructure (Fly.io). Patient information is physically stored in Australia. Data at rest is encrypted as described above; connections are always encrypted end-to-end.</p>
 
     <h3>Access controls</h3>
     <p>Different people see different things:</p>
@@ -133,7 +133,7 @@
       <li>Other treating specialists you have consented to us contacting (for example, a cardiologist)</li>
       <li>The hospital or day-procedure centre where your surgery is booked</li>
     </ul>
-    <p>We do not send your information overseas for processing (beyond the incidental fact that the hosting infrastructure is currently in the United States, as noted above). We do not disclose information for research, teaching, or quality-assurance purposes without your specific consent, except where de-identification makes that reasonable and lawful.</p>
+    <p>We do not send your information overseas for processing. Portal data is stored on Australian infrastructure as noted above; encrypted nightly backups are held in the practice's own Dropbox account, which may replicate data internationally as part of Dropbox's standard cloud storage. We do not disclose information for research, teaching, or quality-assurance purposes without your specific consent, except where de-identification makes that reasonable and lawful.</p>
   </section>
 
   <section class="priv__section">
